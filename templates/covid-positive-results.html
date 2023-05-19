@@ -1,5 +1,71 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Covid-19 Symptom Analysis Results</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        
+        .result {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hospital-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Covid-19 Symptom Analysis Results</h1>
+        <div class="result">
+            <h2>{{ data }}</h2>
+        </div>
+        <button class="hospital-button" onclick="window.open('https://www.google.com/search?q=hospitals+near+me+with+gps+location&sxsrf=ALiCzsYXa4TUsug5LkpIrqdoQs3ceH3nag%3A1651919859254&ei=80t2Yq-dD_Pc5OUP_f6i0AI&oq=hospitals+near+me+with+gps+&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCCEQoAEyBQghEKABMgUIIRCgATIICCEQFhAdEB46BwgAEEcQsAM6CggAEEcQsAMQyQM6BwgAELADEEM6BQgAEIAEOggIABCABBDJAzoFCAAQkgM6BggAEBYQHkoECEYYAFCGA1jrGWCGIWgBcAF4AIABuQGIAYoLkgEEMC4xMJgBAKABAcgBCsABAQ&sclient=gws-wiz');">
+        Search for Nearby Hospitals
+    </button>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
 <head>
         <title>Covid 19 Symptom Analysis Results</title>
 </head>
@@ -40,4 +106,4 @@ font-size: 50px;
         <input type="button" class=hospital onclick="location.href='https://www.google.com/search?q=hospitals+near+me+with+gps+location&sxsrf=ALiCzsYXa4TUsug5LkpIrqdoQs3ceH3nag%3A1651919859254&ei=80t2Yq-dD_Pc5OUP_f6i0AI&oq=hospitals+near+me+with+gps+&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCCEQoAEyBQghEKABMgUIIRCgATIICCEQFhAdEB46BwgAEEcQsAM6CggAEEcQsAMQyQM6BwgAELADEEM6BQgAEIAEOggIABCABBDJAzoFCAAQkgM6BggAEBYQHkoECEEYAEoECEYYAFCGA1jrGWCGIWgBcAF4AIABuQGIAYoLkgEEMC4xMJgBAKABAcgBCsABAQ&sclient=gws-wiz';" value="search for hospitals" />
 </center>
 </body>
-</html>
+</html> -->

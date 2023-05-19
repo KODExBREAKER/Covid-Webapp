@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
-import pickle
+import joblib
 application = Flask("Covid-19-Symptom-Analysis")
-model = pickle.load(open('knn_model.pkl', 'rb'))
+model = joblib.load(open('covid-19.h5', 'rb'))
 app=application
 @app.route("/")
 def home():
@@ -68,7 +68,7 @@ def dia():
          return render_template("covid-positive-results.html", data=data)
       else:
           data="Covid Negative !!"
-          return render_template("covid-nagative-results.html", data=data)
+          return render_template("covid-negative-results.html", data=data)
 
 
 if __name__ == '__main__':

@@ -1,34 +1,118 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-        <title>Covid 19 Symptom Analysis Results</title>
+    <title>Covid-19 Symptom Analysis Results</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        
+        .result {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-distancing {
+            margin-top: 30px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Covid-19 Symptom Analysis Results</h1>
+        <div class="result">
+            <h2>{{ data }}</h2>
+        </div>
+        <div class="social-distancing">
+            <h3>Social Distancing Guidelines</h3>
+            <ul>
+                <li>Maintain at least 1 meter (3 feet) distance from others.</li>
+                <li>Avoid crowded places and gatherings.</li>
+                <li>Wear a mask in public settings where social distancing measures are difficult to maintain.</li>
+                <li>Cover your mouth and nose with your bent elbow or tissue when coughing or sneezing.</li>
+                <li>Stay home if you feel unwell or have any symptoms.</li>
+                <li>Follow local health authority guidelines and recommendations.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Covid 19 Symptom Analysis Results</title>
 </head>
 <style>
-div {
-  /*border-radius: 5px;*/
-  background-color: #f2f2f2;
-  padding: 400px;
-  background-image: url(https://www.umw.edu/covidcourse/wp-content/uploads/sites/51/2020/05/COVID-19_header.jpg);
-  filter: blur(0.2px);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-.bg{
-color: black;
-font-size: 50px;
-}
-
+    div {
+        /*border-radius: 5px;*/
+        background-color: #f2f2f2;
+        padding: 400px;
+        background-image: url(https://www.umw.edu/covidcourse/wp-content/uploads/sites/51/2020/05/COVID-19_header.jpg);
+        filter: blur(0.2px);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    .bg {
+        color: black;
+        font-size: 50px;
+    }
 </style>
+
 <body>
-<center>
+    <center>
         <div>
-                <h1 class=bg> {{data}} </h1>
+            <h1 class=bg> {{data}} </h1>
+        </div>
+        <div class="social-distancing">
+            <h2>Social Distancing Guidelines</h2>
+            <ul>
+                <li>Maintain at least 1 meter (3 feet) distance from others.</li>
+                <li>Avoid crowded places and gatherings.</li>
+                <li>Wear a mask in public settings where social distancing measures are difficult to maintain.</li>
+                <li>Cover your mouth and nose with your bent elbow or tissue when coughing or sneezing.</li>
+                <li>Stay home if you feel unwell or have any symptoms.</li>
+                <li>Follow local health authority guidelines and recommendations.</li>
+            </ul>
         </div>
 
-</center>
+
+    </center>
 
 
 
 </body>
-</html>
+
+</html> -->
